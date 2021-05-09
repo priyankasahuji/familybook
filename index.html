@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Family book</title>
+    </head>
+    <body style="background-color:aquamarine;">
+        <center>
+        
+        <h1>My family book</h1>
+        <marquee><h1> Happy Mothers Day Mumma :)</h1></marquee>
+        <button id ="dd" onclick="changepicture()">Change</button>
+        <br><br><br>
+         <img  id ="photo" src ="https://tse4.mm.bing.net/th?id=OIP.Shy8PjYVfhflUtYYyLojqwHaEK&pid=Api&P=0&w=328&h=185">
+         <h1 id="family_name">Name</h1>
+
+</center>
+        <script>  
+         var images=["https://tse4.mm.bing.net/th?id=OIP.Shy8PjYVfhflUtYYyLojqwHaEK&pid=Api&P=0&w=328&h=185","mama.jpeg","papuuu.jpg","naughty.jpeg","bestest.jpg"]
+        var i=0;    
+        var names=["My Family","Mamma","Papa","Amaira","Aarav"]
+         function changepicture(){
+             document.getElementById("photo").src=images[i];
+             document.getElementById("family_name").innerHTML=names[i];
+i++;
+if(i>4) i=0;
+            }
+        </script>
+    </body>
+</html>
